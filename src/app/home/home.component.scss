@@ -1,5 +1,7 @@
+@import "../../styles.scss";
+
 .container {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
 }
 .col {
@@ -32,4 +34,40 @@ input.btn {
     padding:.5em;
     font-weight:bold;
     cursor:pointer;
+}
+
+.slide-text-container {
+  position: relative;
+    left: 0px;  /* stick it wherever it was positioned by default */
+    top: 0px;
+}
+
+.slide-text {
+  position: absolute;
+  width: 150px;
+  bottom: 6%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.slide-button {
+  background-color: transparentize($primary, 0.15);
+  border-radius: 2px;
+  cursor: pointer;
+  line-height: 40px;
+  text-align: center;
+  color: $accent;
+}
+
+.home-accordion {
+  margin: 0 0 0 0;
+}
+
+
+.home-accordion-panel {
+  width: 100%;
+  margin: 0 auto;
 }

@@ -26,7 +26,7 @@ $warn: mat-color($photo-app-warn);
 /* Application-wide Styles */
 h1 {
   color: $accent;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: sans-serif, Arial, Helvetica;
   font-size: 250%;
   margin-left: 2%;
 }
@@ -34,7 +34,7 @@ h1 {
 
 h2, h3 {
   color: $accent;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif, Helvetica, Arial;
   font-weight: lighter;
   margin-left: 2%;
 }
@@ -44,7 +44,7 @@ body {
 
 p {
   color: #444;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif, Helvetica, Arial;
   font-weight: lighter;
   margin-left: 2%;
 }
