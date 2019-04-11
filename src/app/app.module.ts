@@ -8,13 +8,21 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialImports} from './material-imports';
+import { ServicesPageComponent } from './services-page/services-page.component';
+import { WhyPageComponent } from './why-page/why-page.component';
+import { StatsPageComponent } from './stats-page/stats-page.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    ServicesPageComponent,
+    WhyPageComponent,
+    StatsPageComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -138,5 +138,10 @@
       }
     }
   },
-  "defaultProject": "personal-website-template"
+  "defaultProject": "personal-website-template",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

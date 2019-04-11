@@ -1,6 +1,6 @@
 .container {
-    display: grid;
-    grid-template-columns: 50% auto;
+    width: 75%;
+    margin: 0 auto;
 }
 .col {
     padding: .4em 1.3em;
