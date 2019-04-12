@@ -36,16 +36,14 @@ input.btn {
     cursor:pointer;
 }
 
-.slide-text-container {
-  position: relative;
-    left: 0px;  /* stick it wherever it was positioned by default */
-    top: 0px;
-}
-
-.slide-text {
+.slide-content-box {
+  background-color: transparentize($primary, 0.60);
+  padding: 15px;
   position: absolute;
-  width: 150px;
-  bottom: 6%;
+  //width: 150px;
+  //bottom: 36%;
+  top: 50%;
+  transform: translate(0, -50%);
   left: 0;
   right: 0;
   margin-left: auto;
@@ -53,9 +51,22 @@ input.btn {
   text-align: center;
 }
 
+.slide-text {
+  display: inline;
+//  background-color: transparentize($primary, 0.75);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  padding: 10px;
+//  text-shadow: 1px 1px 1px black;
+  font-weight:bold;
+}
+
 .slide-button {
-  background-color: transparentize($primary, 0.15);
+  background-color: transparentize($primary, 0.50);
   border-radius: 2px;
+  width: 150px;
+  margin: 0 auto;
   cursor: pointer;
   line-height: 40px;
   text-align: center;
