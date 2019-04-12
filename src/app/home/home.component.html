@@ -29,21 +29,72 @@
 </mat-carousel>
 
 <mat-accordion class="home-accordion">
-  <mat-expansion-panel class="home-accordion-panel">
+  <mat-expansion-panel class="home-accordion-panel" [expanded]="true">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Why Sweden?
+        <h3 style="margin-left: 0;">Why Sweden?</h3>
       </mat-panel-title>
     </mat-expansion-panel-header>
-
-    <p> Because Sweden has a King who is very cool. </p>
+    <div>
+      <img class="accordion-image" src="../../assets/beach_bridge.jpg" alt="Knugen picture" width="500px" height="500px">
+      <h3>
+        Sweden has a King
+      </h3>
+      <p>
+        Sweden has a King who is very cool. The King wears a crown and it is beautiful.
+        Even more so than the Queen herself. Now I'm writing a long sentence in order to see how it turns out while
+        rendering it next to the picture to the right which could indeed be any picture you want it to be, you can
+        also change it's size and orientation in the .scss file.
+        Because Sweden has a King who is very cool. The King wears a crown and it is beautiful.
+        Even more so than the Queen herself. Now I'm writing a long sentence in order to see how it turns out while
+        rendering it next to the picture to the right which could indeed be any picture you want it to be, you can
+        also change it's size and orientation in the .scss file.
+        Because Sweden has a King who is very cool. The King wears a crown and it is beautiful.
+        Even more so than the Queen herself. Now I'm writing a long sentence in order to see how it turns out while
+        rendering it next to the picture to the right which could indeed be any picture you want it to be, you can
+        also change it's size and orientation in the .scss file.
+        Because Sweden has a King who is very cool. The King wears a crown and it is beautiful.
+      </p>
+      <p>
+        This is a new paragraph with new stuff. This is a new paragraph with new stuff. This is a new paragraph with new stuff.
+        This is a new paragraph with new stuff. This is a new paragraph with new stuff. This is a new paragraph with new stuff.
+        This is a new paragraph with new stuff. This is a new paragraph with new stuff. This is a new paragraph with new stuff.
+      </p>
+      <h3>
+        You can even have sub-titles!
+      </h3>
+      <p>
+        There are a lot of different titles, for example: h1, h2, h3, h4, h5, h6. They are styled in the main stylesheet called
+        styles.scss, located in the src/app/ folder. You can also search the internet for more text html tags.
+      </p>
+      <h4 class="custom-h4">
+        This is a custom h4 title for this component
+      </h4>
+      <p>
+        Check src/app/home/home.component.scss for the custom-h4 class to modify it. You can do the same with parahraphs.
+        If you set margin-left to 4% for example, you will get in-dented text.
+      </p>
+      <ul>
+        <li>This is a list example.</li>
+        <li>The ul-tag stands for unordered list.</li>
+        <li>There is also an ol-tag for ordered lists</li>
+      </ul>
+      <p>
+        <span style="font-weight:bold;">
+          This is an example of bold text.
+        </span>
+        Note that you can both style directly in the tag like this example code, or you can
+        style properly in the .scss file. In this example we can style directly in the tag since we're only setting the font
+        weight to bold, which makes it convinient. You can also set the font weight to other stuff like italics. Google it.
+      </p>
+    </div>
 
   </mat-expansion-panel>
 
   <mat-expansion-panel class="home-accordion-panel">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Why Japan?
+        <h3 style="margin-left: 0;">Why Japan?</h3>
       </mat-panel-title>
     </mat-expansion-panel-header>
 
@@ -54,7 +105,7 @@
   <mat-expansion-panel class="home-accordion-panel">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        New trade treaty?
+        <h3 style="margin-left: 0;">New trade treaty?</h3>
       </mat-panel-title>
     </mat-expansion-panel-header>
 
@@ -65,7 +116,7 @@
   <mat-expansion-panel class="home-accordion-panel">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        Historic context?
+        <h3 style="margin-left: 0;">Historic context?</h3>
       </mat-panel-title>
     </mat-expansion-panel-header>
 

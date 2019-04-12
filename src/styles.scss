@@ -28,16 +28,27 @@ h1 {
   color: $accent;
   font-family: sans-serif, Arial, Helvetica;
   font-size: 250%;
-  margin-left: 2%;
 }
 
 
-h2, h3 {
+h2 {
+  color: $accent;
+  font-family: sans-serif, Helvetica, Arial;
+  font-weight: lighter;
+}
+
+h3 {
   color: $accent;
   font-family: sans-serif, Helvetica, Arial;
   font-weight: lighter;
   margin-left: 2%;
 }
+
+ul {
+  font-family: sans-serif, Helvetica, Arial;
+  margin-left: 2%;
+}
+
 body {
   margin: 2em;
 }
