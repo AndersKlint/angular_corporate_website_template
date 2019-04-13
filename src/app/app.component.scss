@@ -6,6 +6,16 @@
   background-size: cover;
 }
 
-.router-content {
-  min-height: 46vw;
+.container {
+ min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 225px; /* height of your footer */
+}
+
+app-footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
 }

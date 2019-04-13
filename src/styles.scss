@@ -59,15 +59,18 @@ p {
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box; // used for footer
+}
+
+*:before,
+*:after {
+ box-sizing: border-box; // used for footer
 }
 
 html, body {
-  min-height: 100vh;
-  margin: 0;
+ height: 100%;
+ position: relative;
 }
 
-html {
-  position: relative;
-}
 
-body {font-family: Roboto, "Helvetica Neue", sans-serif; margin-bottom: 175px; }
+body {font-family: Roboto, "Helvetica Neue", sans-serif; }
