@@ -14,6 +14,8 @@ import { WhyPageComponent } from './why-page/why-page.component';
 import { StatsPageComponent } from './stats-page/stats-page.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
+import { BarChartComponent } from './stats-page/bar-chart/bar-chart.component';
+import { PieChartComponent } from './stats-page/pie-chart/pie-chart.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { FooterComponent } from './footer/footer.component';
     WhyPageComponent,
     StatsPageComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    BarChartComponent,
+    PieChartComponent
   ],
   imports: [
     BrowserModule,

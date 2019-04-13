@@ -15,8 +15,8 @@
 }
 
 .slide-content-box {
-  background-color: transparentize($primary, 0.60);
-  padding: 15px;
+  background-color: transparentize(black, 0.40);
+  padding: 30px;
   position: absolute;
   //width: 150px;
   //bottom: 36%;
@@ -38,17 +38,17 @@
   padding: 10px;
 //  text-shadow: 1px 1px 1px black;
   font-weight:bold;
+  color: transparentize($primary, 0.15);
 }
 
 .slide-button {
-  background-color: transparentize($primary, 0.50);
+  background-color: transparentize($primary, 0.20);
   border-radius: 2px;
   width: 150px;
   margin: 0 auto;
   cursor: pointer;
   line-height: 40px;
   text-align: center;
-  color: $accent;
 }
 
 .home-accordion {

@@ -31,3 +31,7 @@
   margin: 0 auto;
   width: 50%;
 }
+
+.active-list-item {
+  background-color: transparentize(mat-color($photo-app-accent, lighter), 0.5);
+}

@@ -13,7 +13,7 @@ export class StatsPageComponent implements OnInit {
     'assets/dragon_boat.jpg',
     'assets/paper_art.jpg',
     'assets/snow_structure.jpg',
-  ]
+  ];
 
   constructor() { }
 
