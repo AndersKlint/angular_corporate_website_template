@@ -4,6 +4,8 @@ import {MatButtonModule, MatIconModule} from '@angular/material';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import {MatExpansionModule} from '@angular/material/expansion';
 
+import { WavesModule, ButtonsModule, IconsModule } from 'angular-bootstrap-md'
+
 @NgModule({
   imports: [
     MatToolbarModule,
@@ -11,6 +13,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatIconModule,
     MatCarouselModule,
     MatExpansionModule,
+    WavesModule,
+    ButtonsModule,
+    IconsModule
   ],
   exports:
   [
@@ -19,6 +24,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatIconModule,
     MatCarouselModule,
     MatExpansionModule,
+    WavesModule,
+    ButtonsModule,
+    IconsModule
   ]
 })
 export class MaterialImports {}

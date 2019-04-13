@@ -11,34 +11,33 @@ $mat-white: (
 );
 
 $photo-app-primary: mat-palette($mat-white, 50);
-$photo-app-accent:  mat-palette($mat-blue, 800);
-$photo-app-text:  mat-palette($mat-blue, 800);
+$photo-app-accent:  mat-palette($mat-blue, 800, 100, 900);
+$photo-app-text:  mat-palette($mat-blue, 900);
 $photo-app-warn:    mat-palette($mat-red);
 $photo-app-theme: mat-light-theme($photo-app-primary, $photo-app-accent, $photo-app-warn);
 
 $primary: mat-color($photo-app-primary);
 $accent: mat-color($photo-app-accent);
-$text: mat-color($photo-app-text);
 $warn: mat-color($photo-app-warn);
 
 @include angular-material-theme($photo-app-theme);
 
 /* Application-wide Styles */
 h1 {
-  color: $accent;
+  color: mat-color($photo-app-text);
   font-family: sans-serif, Arial, Helvetica;
   font-size: 250%;
 }
 
 
 h2 {
-  color: $accent;
+  color: mat-color($photo-app-text);
   font-family: sans-serif, Helvetica, Arial;
   font-weight: lighter;
 }
 
 h3 {
-  color: $accent;
+  color: mat-color($photo-app-text);
   font-family: sans-serif, Helvetica, Arial;
   font-weight: lighter;
   margin-left: 2%;
@@ -49,10 +48,6 @@ ul {
   margin-left: 2%;
 }
 
-body {
-  margin: 2em;
-}
-
 p {
   color: #444;
   font-family: sans-serif, Helvetica, Arial;
@@ -60,14 +55,15 @@ p {
   margin-left: 2%;
 }
 
-body, input[type="text"], button {
-  color: #888;
-  font-family: Cambria, Georgia;
-}
+
 /* everywhere else */
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; margin-bottom: 175px; }
+
+html {
+    position: relative;
+    min-height: 100%;
+}

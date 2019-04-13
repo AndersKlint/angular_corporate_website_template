@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   // git source: https://github.com/gbrlsnchs/material2-carousel
   slides: string[] = [
-    '../../assets/alps_lake.jpg',
-    '../../assets/beach_bridge.jpg',
-    '../../assets/dragon_boat.jpg',
-    '../../assets/paper_art.jpg',
-    '../../assets/snow_structure.jpg',
+    'assets/alps_lake.jpg',
+    'assets/beach_bridge.jpg',
+    'assets/dragon_boat.jpg',
+    'assets/paper_art.jpg',
+    'assets/snow_structure.jpg',
   ]
 
   constructor() { }
