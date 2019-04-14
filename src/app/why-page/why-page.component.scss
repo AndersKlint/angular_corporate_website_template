@@ -1,0 +1,86 @@
+@import "../../styles.scss";
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slide-content-box {
+  background-color: transparentize(black, 0.40);
+  padding: 30px;
+  position: absolute;
+  //width: 150px;
+  //bottom: 36%;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.slide-text {
+  display: inline;
+//  background-color: transparentize($primary, 0.75);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  padding: 10px;
+//  text-shadow: 1px 1px 1px black;
+  font-weight:bold;
+  color: transparentize($primary, 0.15);
+}
+
+.slide-button {
+  background-color: transparentize($primary, 0.20);
+  border-radius: 2px;
+  width: 150px;
+  margin: 0 auto;
+  cursor: pointer;
+  line-height: 40px;
+  text-align: center;
+}
+
+.right-aligned-image {
+  float: right;
+  clear: right;
+  margin-top: 5%;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border: solid $accent 1px;
+  border-radius: 2px;
+  border-width: 2px;
+  padding: 4px;
+}
+
+.image-border {
+  border: solid $accent 1px;
+  border-radius: 2px;
+  border-width: 2px;
+  padding: 4px;
+}
+
+.centered-image {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.image-caption {
+    display: block;
+}
+
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
