@@ -1,5 +1,19 @@
 @import "../../styles.scss";
 
+.transparent {
+  background-color: transparent !important;
+}
+
+.top-color-bar {
+    background-color: $accent;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 8px;
+    padding: 0;
+    z-index: 2;
+}
+
 .title-span {
   color: mat-color($photo-app-text);
   font-family: Arial, Helvetica, sans-serif;
@@ -23,15 +37,7 @@
    z-index: 2;
 }
 
-.toolbar-transparent {
-  background-color: rgba(0,0,0, 0.8);
-}
-
 .toolbar-content {
   margin: 0 auto;
   width: 50%;
-}
-
-.active-list-item {
-  background-color: transparentize(mat-color($photo-app-accent, lighter), 0.5);
 }

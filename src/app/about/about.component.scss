@@ -1,9 +1,7 @@
 @import "../../styles.scss";
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 50px;
+.main-container  {
+  padding-top: 50px;
 }
 
 .slide-content-box {
@@ -41,47 +39,4 @@
   cursor: pointer;
   line-height: 40px;
   text-align: center;
-}
-
-.right-aligned-image {
-  float: right;
-  clear: right;
-  margin-top: 5%;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  border: solid $accent 1px;
-  border-radius: 2px;
-  border-width: 2px;
-  padding: 4px;
-}
-
-.image-border {
-  border: solid $accent 1px;
-  border-radius: 2px;
-  border-width: 2px;
-  padding: 4px;
-}
-
-.centered-image {
-  margin-bottom: 50px;
-  margin-top: 50px;
-  text-align: center;
-}
-
-.image-caption {
-    display: block;
-}
-
- /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 20px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
 }

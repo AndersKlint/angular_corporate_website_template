@@ -1,9 +1,5 @@
 @import "../../styles.scss";
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
 .col {
     padding: .4em 1.3em;
 }
@@ -14,58 +10,44 @@
     background: #57B3F1;
 }
 
-.slide-content-box {
-  background-color: transparentize(black, 0.40);
-  padding: 30px;
-  position: absolute;
-  //width: 150px;
-  //bottom: 36%;
-  top: 50%;
-  transform: translate(0, -50%);
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+.carousel-container {
+  width: 100vw;
+}
+
+.card {
+    border-radius: 1px !important;
+}
+
+.card-top-text-container {
   text-align: center;
-}
-
-.slide-text {
-  display: inline;
-//  background-color: transparentize($primary, 0.75);
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 3px;
-  padding: 10px;
-//  text-shadow: 1px 1px 1px black;
-  font-weight:bold;
-  color: transparentize($primary, 0.15);
-}
-
-.slide-button {
-  background-color: transparentize($primary, 0.20);
-  border-radius: 2px;
-  width: 150px;
+  width: 50%;
   margin: 0 auto;
-  cursor: pointer;
-  line-height: 40px;
-  text-align: center;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
 }
 
 .home-accordion {
   margin: 0 0 0 0;
 }
 
+.overlap-up {
+  position: relative;
+  margin-top: -50px;
+  z-index: 1;
+}
 
 .home-accordion-panel {
   width: 100%;
   margin: 0 auto;
+  border-radius: 1px !important;
 }
 
 .accordion-image {
   float: right;
   clear: right;
+  margin-top: 40px;
   margin-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border: solid $accent 1px;
   border-radius: 2px;
   border-width: 2px;
