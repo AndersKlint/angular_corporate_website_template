@@ -1,5 +1,4 @@
-<div class="main-container">
-
+<div class="carousel-container">
 <mat-carousel
   timings="1000ms ease-in"
   [autoplay]="true"
@@ -32,97 +31,166 @@
     </div>
 </mat-carousel-slide>
 </mat-carousel>
+</div>
 
-<mat-accordion class="home-accordion">
-  <mat-expansion-panel class="home-accordion-panel" [expanded]="false">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <h3 style="margin-left: 0;">
-          Service 1
-        </h3>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-    <div>
-      <img class="accordion-image" src="assets/beach_bridge.jpg" alt="Knugen picture" width="500px" height="500px">
-      <h3>
-        Title 1
-      </h3>
+<mat-card class="main-container overlap-up home-card mat-elevation-z0">
+  <mat-card-content>
+    <div class="card-top-text-container">
+      <h1 style="margin-left: 0px;">Our Services</h1>
       <p>
-        Text.
+        We focus on giving you the best experience communicating between Sweden and Japan. That's why we offer a
+        comprehensive consulting service regarding the issue.
       </p>
-      <p>
-        More text.
-      </p>
-      <h3>
-        Title 2
-      </h3>
-      <p>
-        Text.
-      </p>
-      <h4 class="custom-h4">
-        Custom title
-      </h4>
-      <p>
-        Check src/app/home/home.component.scss for the custom-h4 class to modify it. You can do the same with parahraphs.
-        If you set margin-left to 4% for example, you will get in-dented text.
-      </p>
-      <ul>
-        <li>This is a list example.</li>
-        <li>The ul-tag stands for unordered list.</li>
-        <li>There is also an ol-tag for ordered lists</li>
-      </ul>
-      <p>
-        <span style="font-weight:bold;">
-          This is an example of bold text.
-        </span>
-        Note that you can both style directly in the tag like this example code, or you can
-        style properly in the .scss file. In this example we can style directly in the tag since we're only setting the font
-        weight to bold, which makes it convinient. You can also set the font weight to other stuff like italics. Google it.
-      </p>
+      <div style="width: 75%; margin: 0 auto;">
+        <mat-divider style="margin-top: 50px;" [inset]="true"></mat-divider>
+      </div>
     </div>
 
-  </mat-expansion-panel>
+    <mat-accordion class="home-accordion">
+      <mat-expansion-panel class="home-accordion-panel mat-elevation-z0" [expanded]="false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h3 style="margin-left: 0;">
+              Service 1
+            </h3>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div>
+          <div class="right-aligned-image" style="width: 50%">
+            <img class="image-border" src="assets/beach_bridge.jpg" alt="Knugen picture" width="100%">
+              <i class="image-caption">
+                This is an image of a bridge. It was constructed somwhere between the birth of
+                Jesus Christ (our lord and saivour) and today.
+              </i>
+          </div>
+          <h3>
+            Sweden has a King
+          </h3>
+          <p>
+            Sweden has a King who is very cool. The King wears a crown and it is beautiful.
+            Even more so than the Queen herself. Now I'm writing a long sentence in order to see how it turns out while
+            rendering it next to the picture to the right which could indeed be any picture you want it to be, you can
+            also change it's size and orientation in the .scss file.
+            Because Sweden has a King who is very cool. The King wears a crown and it is beautiful.
+            Even more so than the Queen herself. Now I'm writing a long sentence in order to see how it turns out while
+            rendering it next to the picture to the right which could indeed be any picture you want it to be, you can
+            also change it's size and orientation in the .scss file.
+            Because Sweden has a King who is very cool. The King wears a crown and it is beautiful.
+            Even more so than the Queen herself. Now I'm writing a long sentence in order to see how it turns out while
+            rendering it next to the picture to the right which could indeed be any picture you want it to be, you can
+            also change it's size and orientation in the .scss file.
+            Because Sweden has a King who is very cool. The King wears a crown and it is beautiful.
+          </p>
+          <p>
+            This is a new paragraph with new stuff. This is a new paragraph with new stuff. This is a new paragraph with new stuff.
+            This is a new paragraph with new stuff. This is a new paragraph with new stuff. This is a new paragraph with new stuff.
+            This is a new paragraph with new stuff. This is a new paragraph with new stuff. This is a new paragraph with new stuff.
+          </p>
+          <h3>
+            You can even have sub-titles!
+          </h3>
+          <p>
+            There are a lot of different titles, for example: h1, h2, h3, h4, h5, h6. They are styled in the main stylesheet called
+            styles.scss, located in the src/app/ folder. You can also search the internet for more text html tags.
+          </p>
 
-  <mat-expansion-panel class="home-accordion-panel">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <h3 style="margin-left: 0;">
-          Service 2
-        </h3>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
+          <div class="centered-image" style="width: 50%;">
+            <img class="image-border" src="assets/beach_bridge.jpg" alt="Knugen picture" width="100%">
+            <i class="image-caption">
+              This is an image of a bridge. It was constructed somwhere between the birth of
+              Jesus Christ (our lord and saivour) and today.
+            </i>
+          </div>
 
-    <p>Text area.</p>
+          <h4 class="custom-h4">
+            This is a custom h4 title for this component
+          </h4>
 
-  </mat-expansion-panel>
+          <p>
+            Check src/app/home/home.component.scss for the custom-h4 class to modify it. You can do the same with parahraphs.
+            If you set margin-left to 4% for example, you will get in-dented text.
+          </p>
+          <ul>
+            <li>This is a list example.</li>
+            <li>The ul-tag stands for unordered list.</li>
+            <li>There is also an ol-tag for ordered lists</li>
+          </ul>
+          <p>
+            <span style="font-weight:bold;">
+              This is an example of bold text.
+            </span>
+            Note that you can both style directly in the tag like this example code, or you can
+            style properly in the .scss file. In this example we can style directly in the tag since we're only setting the font
+            weight to bold, which makes it convinient. You can also set the font weight to other stuff like italics. Google it.
+          </p>
+        </div>
 
-  <mat-expansion-panel class="home-accordion-panel">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <h3 style="margin-left: 0;">
-          Service 3
-        </h3>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-
-    <p>Text area.</p>
-
-  </mat-expansion-panel>
-
-  <mat-expansion-panel class="home-accordion-panel">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <h3 style="margin-left: 0;">
-          Service 4
-        </h3>
-      </mat-panel-title>
-    </mat-expansion-panel-header>
-
-    <p>Text area.</p>
-
-  </mat-expansion-panel>
-
-</mat-accordion>
+          <div>
+            <p style="margin-left: 4%;">
+              If you set margin-left to 4% for example, you will get in-dented text. This can be done either in a stylesheet with
+              class, or with an "in-line" style like this example (check style= in the p-tag).
+            </p>
 
 
-</div>
+             <div class="row centered-image">
+              <div class="column">
+                <img class="image-border" src="assets/beach_bridge.jpg" alt="Knugen picture" width="100%">
+                <i class="image-caption">
+                  This is an image of a bridge. It was constructed somwhere between the birth of
+                  Jesus Christ (our lord and saivour) and today.
+                </i>
+              </div>
+              <div class="column">
+                <img class="image-border" src="assets/beach_bridge.jpg" alt="Knugen picture" width="100%">
+              </div>
+              <div class="column">
+                <img class="image-border" src="assets/beach_bridge.jpg" alt="Knugen picture" width="100%">
+              </div>
+            </div>
+          </div>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel class="home-accordion-panel mat-elevation-z0">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h3 style="margin-left: 0;">
+              Service 2
+            </h3>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <p>Text area.</p>
+
+      </mat-expansion-panel>
+
+      <mat-expansion-panel class="home-accordion-panel mat-elevation-z0">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h3 style="margin-left: 0;">
+              Service 3
+            </h3>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <p>Text area.</p>
+
+      </mat-expansion-panel>
+
+      <mat-expansion-panel class="home-accordion-panel mat-elevation-z0">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h3 style="margin-left: 0;">
+              Service 4
+            </h3>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <p>Text area.</p>
+
+      </mat-expansion-panel>
+
+    </mat-accordion>
+
+
+  </mat-card-content>
+</mat-card>

@@ -1,59 +1,5 @@
 @import "../../styles.scss";
 
-.col {
-    padding: .4em 1.3em;
-}
-.color-dark {
-    background: #2885C4;
-}
-.color-light {
-    background: #57B3F1;
-}
-
-.carousel-container {
-  width: 100vw;
-}
-
-.card {
-    border-radius: 1px !important;
-}
-
-.card-top-text-container {
-  text-align: center;
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 50px !important;
-  margin-bottom: 50px !important;
-}
-
-.home-accordion {
-  margin: 0 0 0 0;
-}
-
-.overlap-up {
-  position: relative;
-  margin-top: -50px;
-  z-index: 1;
-}
-
-.home-accordion-panel {
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 1px !important;
-}
-
-.accordion-image {
-  float: right;
-  clear: right;
-  margin-top: 40px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  border: solid $accent 1px;
-  border-radius: 2px;
-  border-width: 2px;
-  padding: 4px;
-}
-
 .custom-h4 {
   //color: mat-color($photo-app-accent, darker);
   font-family: sans-serif, Helvetica, Arial;

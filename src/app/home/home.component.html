@@ -29,7 +29,7 @@
 </div>
 
 
-<mat-card class="main-container overlap-up card mat-elevation-z0">
+<mat-card class="main-container overlap-up home-card mat-elevation-z0">
   <mat-card-content>
     <div class="card-top-text-container">
       <h1 style="margin-left: 0px;">Welcome!</h1>
@@ -50,7 +50,13 @@
           </mat-panel-title>
         </mat-expansion-panel-header>
         <div>
-          <img class="accordion-image" src="assets/beach_bridge.jpg" alt="Knugen picture" width="500px" height="500px">
+          <div class="right-aligned-image" style="width: 50%">
+            <img class="image-border" src="assets/beach_bridge.jpg" alt="Knugen picture" width="100%">
+              <i class="image-caption">
+                This is an image of a bridge. It was constructed somwhere between the birth of
+                Jesus Christ (our lord and saivour) and today.
+              </i>
+          </div>
           <h3>
             Sweden has a King
           </h3>
@@ -81,9 +87,19 @@
             There are a lot of different titles, for example: h1, h2, h3, h4, h5, h6. They are styled in the main stylesheet called
             styles.scss, located in the src/app/ folder. You can also search the internet for more text html tags.
           </p>
+
+          <div class="centered-image" style="width: 50%;">
+            <img class="image-border" src="assets/beach_bridge.jpg" alt="Knugen picture" width="100%">
+            <i class="image-caption">
+              This is an image of a bridge. It was constructed somwhere between the birth of
+              Jesus Christ (our lord and saivour) and today.
+            </i>
+          </div>
+
           <h4 class="custom-h4">
             This is a custom h4 title for this component
           </h4>
+
           <p>
             Check src/app/home/home.component.scss for the custom-h4 class to modify it. You can do the same with parahraphs.
             If you set margin-left to 4% for example, you will get in-dented text.
@@ -103,6 +119,29 @@
           </p>
         </div>
 
+          <div>
+            <p style="margin-left: 4%;">
+              If you set margin-left to 4% for example, you will get in-dented text. This can be done either in a stylesheet with
+              class, or with an "in-line" style like this example (check style= in the p-tag).
+            </p>
+
+
+             <div class="row centered-image">
+              <div class="column">
+                <img class="image-border" src="assets/beach_bridge.jpg" alt="Knugen picture" width="100%">
+                <i class="image-caption">
+                  This is an image of a bridge. It was constructed somwhere between the birth of
+                  Jesus Christ (our lord and saivour) and today.
+                </i>
+              </div>
+              <div class="column">
+                <img class="image-border" src="assets/beach_bridge.jpg" alt="Knugen picture" width="100%">
+              </div>
+              <div class="column">
+                <img class="image-border" src="assets/beach_bridge.jpg" alt="Knugen picture" width="100%">
+              </div>
+            </div>
+          </div>
       </mat-expansion-panel>
 
       <mat-expansion-panel class="home-accordion-panel mat-elevation-z0">

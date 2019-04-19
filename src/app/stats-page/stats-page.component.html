@@ -1,5 +1,4 @@
-<div class="main-container">
-
+<div class="carousel-container">
 <mat-carousel
   timings="1000ms ease-in"
   [autoplay]="true"
@@ -32,10 +31,22 @@
     </div>
 </mat-carousel-slide>
 </mat-carousel>
+</div>
 
 
-<mat-card class="card">
+<mat-card class="main-container overlap-up home-card mat-elevation-z0">
   <mat-card-content>
+    <div class="card-top-text-container">
+      <h1 style="margin-left: 0px;">Statistics between Sweden and Japan</h1>
+      <p>
+        We focus on giving you the best experience communicating between Sweden and Japan. That's why we offer a
+        comprehensive consulting service regarding the issue.
+      </p>
+      <div style="width: 75%; margin: 0 auto;">
+        <mat-divider style="margin-top: 50px;" [inset]="true"></mat-divider>
+      </div>
+    </div>
+
     <h2>Japan and Sweden</h2>
     <!--
     To change the charts go into their directory located in this folder and change the data in the .ts files.
@@ -202,12 +213,3 @@
   </mat-card-content>
 
 </mat-card>
-
-
-
-
-
-
-
-
-</div>

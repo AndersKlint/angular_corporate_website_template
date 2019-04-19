@@ -121,16 +121,43 @@ body {
   text-align: center;
 }
 
+.carousel-container {
+  width: 100vw;
+}
+
+.home-card {
+    border-radius: 1px !important;
+}
+
+.card-top-text-container {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+}
+
+.home-accordion {
+  margin: 0 0 0 0;
+}
+
+.overlap-up {
+  position: relative;
+  margin-top: -50px;
+  z-index: 1;
+}
+
+.home-accordion-panel {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 1px !important;
+}
+
 .right-aligned-image {
   float: right;
-  clear: right;
-  margin-top: 5%;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  border: solid $accent 1px;
-  border-radius: 2px;
-  border-width: 2px;
-  padding: 4px;
+  margin-top: 30px;
+  margin-left: 25px;
+  margin-bottom: 15px;
 }
 
 .image-border {
@@ -143,6 +170,7 @@ body {
 .centered-image {
   margin-bottom: 50px;
   margin-top: 50px;
+  margin: 0 auto;
   text-align: center;
 }
 
