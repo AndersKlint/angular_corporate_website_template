@@ -29,7 +29,7 @@ import { PieChartComponent } from './stats-page/pie-chart/pie-chart.component';
     AboutComponent,
     FooterComponent,
     BarChartComponent,
-    PieChartComponent
+    PieChartComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +37,8 @@ import { PieChartComponent } from './stats-page/pie-chart/pie-chart.component';
     BrowserAnimationsModule,
     MaterialImports,
     MDBBootstrapModule.forRoot(),
+
+
   ],
   providers: [],
   bootstrap: [AppComponent],

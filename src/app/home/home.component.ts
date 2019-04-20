@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  // git source: https://github.com/gbrlsnchs/material2-carousel
+  
   slides: string[] = [
     'assets/alps_lake.jpg',
     'assets/beach_bridge.jpg',

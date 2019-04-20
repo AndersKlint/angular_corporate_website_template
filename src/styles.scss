@@ -41,6 +41,7 @@ h3 {
   font-family: sans-serif, Helvetica, Arial;
   font-weight: lighter;
   margin-left: 2%;
+  font-size: 125%;
 }
 
 ul {
@@ -103,26 +104,39 @@ body {
 //  background-color: transparentize($primary, 0.75);
   margin-left: auto;
   margin-right: auto;
-  border-radius: 3px;
-  padding: 10px;
   text-shadow: 0px 0px 50px black;
   font-weight:bold;
   font-size: 250%;
   color: $primary;
+  text-align: center;
 }
 
 .slide-button {
   background-color: $primary;
   border-radius: 2px;
   width: 150px;
+  padding-top: 12px;
+  padding-bottom: 6px;
   margin: 0 auto;
+  margin-top: 50px;
   cursor: pointer;
-  line-height: 40px;
-  text-align: center;
 }
 
 .carousel-container {
   width: 100vw;
+}
+
+.carousel-image-container {
+  object-fit: contain;
+  margin: 0 auto;
+  width: inherit;
+  height: 75vh;
+}
+
+.carousel-image {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
 @media (max-width: 800px) {
@@ -133,7 +147,7 @@ body {
   .overlap-up {
     margin-top: 0px;
   }
-  
+
 }
 
 .home-card {

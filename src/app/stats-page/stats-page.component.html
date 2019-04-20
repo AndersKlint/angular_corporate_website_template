@@ -1,36 +1,20 @@
 <div class="carousel-container">
-<mat-carousel
-  timings="1000ms ease-in"
-  [autoplay]="true"
-  interval="5000"
-  color="primary"
-  maxWidth="auto"
-  proportion="30"
-  slides="5"
-  [loop]="true"
-  [hideArrows]="false"
-  [hideIndicators]="false"
-  [useKeyboard]="false"
-  [useMouseWheel]="false"
-  orientation="ltr"
->
-  <mat-carousel-slide
-    #matCarouselSlide
-    *ngFor="let slide of slides; let i = index"
-    [image]="slide"
-    overlayColor="#00000040"
-    [hideOverlay]="true"
-    class="slide-text-container">
-    <div class="slide-content-box">
-      <h3 class="slide-text" *ngIf="i === 0">We do the stuff with our services!</h3>
-      <h3 class="slide-text" *ngIf="i === 1">We also do other stuff!</h3>
-      <h3 class="slide-text" *ngIf="i === 2">And some more!</h3>
-      <h3 class="slide-text" *ngIf="i === 3">Maybe even that kinda stuff!</h3>
-      <h3 class="slide-text" *ngIf="i === 4">So what do you think?</h3>
-      <div class="slide-button" *ngIf="i === 4" routerLink="/contact"><h3 style="font-weight:bold;">Contact us</h3></div>
+<mdb-carousel [animation]="'slide'">
+  <mdb-carousel-item *ngFor="let slide of slides; let i = index">
+    <div class="carousel-image-container">
+      <img class="d-block w-100 carousel-image" src={{slide}} alt="Slide image">
+          <div class="slide-content-box">
+            <h3 class="slide-text" *ngIf="i === 0">We do the stuff with our services!</h3>
+            <h3 class="slide-text" *ngIf="i === 1">We also do other stuff!</h3>
+            <h3 class="slide-text" *ngIf="i === 2">And some more!</h3>
+            <h3 class="slide-text" *ngIf="i === 3">Maybe even that kinda stuff!</h3>
+            <h3 class="slide-text" *ngIf="i === 4">So what do you think?</h3>
+            <div class="slide-button" *ngIf="i === 4" routerLink="/contact"><h3 style="font-weight:bold;">Contact us</h3></div>
+          </div>
     </div>
-</mat-carousel-slide>
-</mat-carousel>
+  </mdb-carousel-item>
+
+</mdb-carousel>
 </div>
 
 
