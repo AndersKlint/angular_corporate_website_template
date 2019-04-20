@@ -1,14 +1,27 @@
 <div class="top-color-bar"></div>
 <mat-toolbar class="mat-elevation-z0 transparent" style="min-height: 80px">
-  <span class="title-span">Olof's Consulting</span>
   <div class="toolbar-content">
-    <nav class="toolbar-nav-buttons">
+    <span class="title-text" routerLink="/home">Olof's Consulting</span>
+    <div class="toolbar-nav-buttons">
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/home">Home</button>
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/serviecs">Services</button>
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/statistics">Statistics</button>
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/why">Why it's needed</button>
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/contact">Contact</button>
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/about">About</button>
-    </nav>
+    </div>
+    <div class="toolbar-menu"> <!-- Only used on smaller screens -->
+      <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/home">Home</button>
+        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/serviecs">Services</button>
+        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/statistics">Statistics</button>
+        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/why">Why it's needed</button>
+        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/contact">Contact</button>
+        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/about">About</button>
+      </mat-menu>
+    </div>
   </div>
 </mat-toolbar>

@@ -14,12 +14,15 @@
     z-index: 2;
 }
 
-.title-span {
+.title-text {
+  display: inline-block;
   color: mat-color($photo-app-text);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 150%;
-  padding-left: 20%;
+  margin-right: 5%;
   font-weight:bold;
+  cursor: pointer;
+  outline: none;
 }
 
 .toolbar-fill-remaining-space {
@@ -27,9 +30,11 @@
 }
 
 .toolbar-nav-buttons {
-  padding-left: 25px;
-  padding-right: 25px;
   display: inline-block;
+}
+
+.toolbar-menu {
+  display: none;
 }
 
 .mat-elevation-z2 {
@@ -39,5 +44,32 @@
 
 .toolbar-content {
   margin: 0 auto;
-  width: 50%;
+}
+
+.active-list-item {
+  background-color: mat-color($photo-app-accent, lighter);
+}
+
+@media (max-width: 850px) {
+
+  .toolbar-nav-buttons {
+    display: none;
+  }
+
+  .toolbar-menu {
+    display: flex;
+  }
+
+  .toolbar-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .title-text {
+    font-size: 100%;
+  }
 }

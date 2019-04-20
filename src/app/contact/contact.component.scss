@@ -1,11 +1,14 @@
 
 .maps {
   margin: 0 auto;
-   display: inline-block;
-  height: 25vw;
+  display: inline-block;
+  height: 75vh;
   width: 100%;
 }
 
-.card {
+@media (max-width: 850px) {
 
+  .maps {
+      height: 50vh;
+  }
 }

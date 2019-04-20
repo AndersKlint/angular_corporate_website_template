@@ -79,6 +79,14 @@ body {
   margin: 0;
 }
 
+button:focus { outline: none; } // removes firefox dotted outlione
+
+img:hover { outline: none !important;} // removes firefox dotted outlione
+
+mat-icon{ // workaround for mat icon bug (probably induced by mdb)
+  font-family: 'Material Icons' !important;
+}
+
 .main-container {
     width: 60%;
     margin: 0 auto;
@@ -139,16 +147,6 @@ body {
   object-position: center center;
 }
 
-@media (max-width: 800px) {
-  .main-container {
-    width: 100%;
-  }
-
-  .overlap-up {
-    margin-top: 0px;
-  }
-
-}
 
 .home-card {
     border-radius: 1px !important;
@@ -180,9 +178,10 @@ body {
 
 .right-aligned-image {
   float: right;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: 25px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .image-border {
@@ -197,6 +196,7 @@ body {
   margin-top: 50px;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .image-caption {
@@ -215,4 +215,47 @@ body {
   content: "";
   clear: both;
   display: table;
+}
+
+@media (max-width: 850px) {
+
+  .carousel-image-container  {
+    height: 50vh;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .overlap-up {
+    margin-top: 0px;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .centered-image {
+    width: 60% !important;
+  }
+
+  .card-top-text-container {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .right-aligned-image {
+    width: 100% !important;
+  }
+
+  .centered-image {
+    width: 100% !important;
+  }
+
+  .slide-text {
+    font-size: 150%;
+  }
 }
