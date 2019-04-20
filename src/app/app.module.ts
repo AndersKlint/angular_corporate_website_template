@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-//import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
-import {ChartsModule, WavesModule, ButtonsModule, CarouselModule } from 'angular-bootstrap-md'
+//import {ChartsModule, WavesModule, ButtonsModule, CarouselModule } from 'angular-bootstrap-md'
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { MaterialImports} from './material-imports';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -38,10 +38,9 @@ import { PieChartComponent } from './stats-page/pie-chart/pie-chart.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialImports,
-    CarouselModule.forRoot(),
-    ChartsModule
+    MDBBootstrapModule.forRoot(),
   ],
-  providers: [WavesModule, ButtonsModule],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
