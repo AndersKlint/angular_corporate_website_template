@@ -125,6 +125,17 @@ body {
   width: 100vw;
 }
 
+@media (max-width: 800px) {
+  .main-container {
+    width: 100%;
+  }
+
+  .overlap-up {
+    margin-top: 0px;
+  }
+  
+}
+
 .home-card {
     border-radius: 1px !important;
 }
