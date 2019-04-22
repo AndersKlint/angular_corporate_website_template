@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "personal-website-template": {
+    "corporate-website-template": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/personal-website-template",
+            "outputPath": "dist/corporate-website-template",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -74,18 +74,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "personal-website-template:build"
+            "browserTarget": "corporate-website-template:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "personal-website-template:build:production"
+              "browserTarget": "corporate-website-template:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "personal-website-template:build"
+            "browserTarget": "corporate-website-template:build"
           }
         },
         "test": {
@@ -120,7 +120,7 @@
         }
       }
     },
-    "personal-website-template-e2e": {
+    "corporate-website-template-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -129,11 +129,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "personal-website-template:serve"
+            "devServerTarget": "corporate-website-template:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "personal-website-template:serve:production"
+              "devServerTarget": "corporate-website-template:serve:production"
             }
           }
         },
@@ -149,7 +149,7 @@
       }
     }
   },
-  "defaultProject": "personal-website-template",
+  "defaultProject": "corporate-website-template",
   "schematics": {
     "@schematics/angular:component": {
       "styleext": "scss"
