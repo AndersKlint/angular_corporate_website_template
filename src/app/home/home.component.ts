@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,11 @@ export class HomeComponent implements OnInit {
     'assets/snow_structure.jpg',
   ]
 
-  constructor() { }
+  language: string;
+
+  constructor(private languageService: LanguageService) {
+    this.language = this.languageService.language;
+   }
 
   ngOnInit() {
   }

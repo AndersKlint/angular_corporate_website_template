@@ -22,7 +22,7 @@
     </ng-template>
 
     <!-- Only used on smaller screens -->
-    <div *ngIf="language === 'en'; else elseBlock2">
+    <div *ngIf="language === 'en'; else elseBlockMenu">
       <div class="toolbar-menu"> 
         <button mat-button [matMenuTriggerFor]="menu">
           <mat-icon>menu</mat-icon>
@@ -37,7 +37,7 @@
         </mat-menu>
       </div>
     </div>
-    <ng-template #elseBlock2>
+    <ng-template #elseBlockMenu>
     <div class="toolbar-menu"> 
         <button mat-button [matMenuTriggerFor]="menu">
           <mat-icon>menu</mat-icon>
@@ -53,6 +53,11 @@
       </div>
     </ng-template>
 
-
   </div>
+    <span *ngIf="language === 'en'; else elseBlockLang">
+      <button mat-button color="accent" (click)="changeLanguage('ja')">日本語</button>
+    </span>
+    <ng-template #elseBlockLang>
+      <button mat-button color="accent" (click)="changeLanguage('en')">English</button>
+    </ng-template>
 </mat-toolbar>

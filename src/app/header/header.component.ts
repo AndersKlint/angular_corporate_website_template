@@ -12,11 +12,13 @@ export class HeaderComponent implements OnInit {
 
   constructor(private languageService: LanguageService) {
     this.language = this.languageService.language;
-    console.log(this.language);
    }
 
-
   ngOnInit() {
+  }
+
+  changeLanguage(newLang: string) {
+    this.languageService.changeLanguage(newLang);
   }
 
 }
