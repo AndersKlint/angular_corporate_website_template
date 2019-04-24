@@ -2,26 +2,57 @@
 <mat-toolbar class="mat-elevation-z0 transparent" style="min-height: 80px">
   <div class="toolbar-content">
     <span class="title-text" routerLink="/home">Olof's Consulting</span>
-    <div class="toolbar-nav-buttons">
+    <div class="toolbar-nav-buttons" *ngIf="language === 'en'; else elseBlock">
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/home">Home</button>
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/serviecs">Services</button>
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/statistics">Statistics</button>
-      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/why">Why it's needed</button>
+      <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/why">Why?</button>
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/contact">Contact</button>
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/about">About</button>
     </div>
-    <div class="toolbar-menu"> <!-- Only used on smaller screens -->
-      <button mat-button [matMenuTriggerFor]="menu">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/home">Home</button>
-        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/serviecs">Services</button>
-        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/statistics">Statistics</button>
-        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/why">Why it's needed</button>
-        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/contact">Contact</button>
-        <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/about">About</button>
-      </mat-menu>
+    <ng-template #elseBlock>
+      <div class="toolbar-nav-buttons">
+      <button mat-button color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/home">ホーム</button>
+      <button mat-button color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/serviecs">サービス</button>
+      <button mat-button color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/statistics">統計</button>
+      <button mat-button color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/why">如何して?</button>
+      <button mat-button color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/contact">接触</button>
+      <button mat-button color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/about">アバウト</button>
+      </div>
+    </ng-template>
+
+    <!-- Only used on smaller screens -->
+    <div *ngIf="language === 'en'; else elseBlock2">
+      <div class="toolbar-menu"> 
+        <button mat-button [matMenuTriggerFor]="menu">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/home">Home</button>
+          <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/serviecs">Services</button>
+          <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/statistics">Statistics</button>
+          <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/why">Why?</button>
+          <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/contact">Contact</button>
+          <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/about">About</button>
+        </mat-menu>
+      </div>
     </div>
+    <ng-template #elseBlock2>
+    <div class="toolbar-menu"> 
+        <button mat-button [matMenuTriggerFor]="menu">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/home">ホーム</button>
+            <button mat-menu-item color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/serviecs">サービス</button>
+            <button mat-menu-item color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/statistics">統計</button>
+            <button mat-menu-item color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/why">如何して?</button>
+            <button mat-menu-item color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/contact">接触</button>
+            <button mat-menu-item color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/about">アバウト</button>
+        </mat-menu>
+      </div>
+    </ng-template>
+
+
   </div>
 </mat-toolbar>
