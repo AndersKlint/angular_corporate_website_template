@@ -4,6 +4,9 @@ A live demo can be found [here](https://andersklint.github.io/angular_corporate_
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4, and uses [Angular Material](https://material.angular.io/) and [Material Design for Bootstrat 4](https://mdbootstrap.com/) for styling.
 
+## Screenshot
+![home-page](https://raw.githubusercontent.com/andersklint/angular_corporate_website_template/master/screenshots/home-page.jpg)
+
 ## Setup
 If you're on Windows I recommend installing Ubuntu filesystem for Windows, to gain access to a Linux based terminal.
 
