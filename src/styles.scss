@@ -10,34 +10,34 @@ $mat-white: (
   )
 );
 
-$photo-app-primary: mat-palette($mat-white, 50);
-$photo-app-accent:  mat-palette($mat-blue, 800, 100, 900);
-$photo-app-text:  mat-palette($mat-blue, 900);
-$photo-app-warn:    mat-palette($mat-red);
-$photo-app-theme: mat-light-theme($photo-app-primary, $photo-app-accent, $photo-app-warn);
+$corporate-app-primary: mat-palette($mat-white, 50);
+$corporate-app-accent:  mat-palette($mat-blue, 800, 100, 900);
+$corporate-app-text:  mat-palette($mat-blue, 900);
+$corporate-app-warn:    mat-palette($mat-red);
+$corporate-app-theme: mat-light-theme($corporate-app-primary, $corporate-app-accent, $corporate-app-warn);
 
-$primary: mat-color($photo-app-primary);
-$accent: mat-color($photo-app-accent);
-$warn: mat-color($photo-app-warn);
+$primary: mat-color($corporate-app-primary);
+$accent: mat-color($corporate-app-accent);
+$warn: mat-color($corporate-app-warn);
 
-@include angular-material-theme($photo-app-theme);
+@include angular-material-theme($corporate-app-theme);
 
 /* Application-wide Styles */
 h1 {
-  color: mat-color($photo-app-text);
+  color: mat-color($corporate-app-text);
   font-family: sans-serif, Arial, Helvetica;
   font-size: 250%;
 }
 
 
 h2 {
-  color: mat-color($photo-app-text);
+  color: mat-color($corporate-app-text);
   font-family: sans-serif, Helvetica, Arial;
   font-weight: lighter;
 }
 
 h3 {
-  color: mat-color($photo-app-text);
+  color: mat-color($corporate-app-text);
   font-family: sans-serif, Helvetica, Arial;
   font-weight: lighter;
   margin-left: 2%;
