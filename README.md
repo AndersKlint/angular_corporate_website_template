@@ -9,7 +9,7 @@ If you're on Windows I recommend installing Ubuntu filesystem for Windows, to ga
 
 1. Install NodeJS, npm, and Angular if you haven't already.
 2. Clone or fork the repo to your own github account, preferably. Else, just download the repo locally.
-3. Navigate to the project directory in the terminal (the folder with angular.json, src, node_modules, etc.)
+3. Navigate to the project directory in the terminal (the folder with angular.json, src, node_modules, etc. in it)
 4. Run the command: "npm update". This will download all dependencies for the project.
 5. Then just run "ng serve -o" everytime you want to start the web server.
 
