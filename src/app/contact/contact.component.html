@@ -3,17 +3,19 @@
   <object class="maps" data="https://maps.google.com/maps?q=lund%20c&t=&z=3&ie=UTF8&iwloc=&output=embed"></object>
 </div>
 
-<mat-card class="main-container overlap-up home-card mat-elevation-z0">
-  <mat-card-content>
-    <div class="card-top-text-container">
-      <h1 style="margin-left: 0px;">You'll find us here</h1>
-      <p>
-        We focus on giving you the best experience communicating between Sweden and Japan. That's why we offer a
-        comprehensive consulting service regarding the issue.
-      </p>
-      <div style="width: 75%; margin: 0 auto;">
-        <mat-divider style="margin-top: 50px;" [inset]="true"></mat-divider>
-      </div>
+
+<div class="toolbar-nav-buttons" *ngIf="language === 'en'; else elseBlock">
+  <mat-card class="main-container overlap-up home-card mat-elevation-z0">
+    <mat-card-content>
+      <div class="card-top-text-container">
+        <h1 style="margin-left: 0px;">You'll find us here</h1>
+        <p>
+          We focus on giving you the best experience communicating between Sweden and Japan. That's why we offer a
+          comprehensive consulting service regarding the issue.
+        </p>
+        <div style="width: 75%; margin: 0 auto;">
+          <mat-divider style="margin-top: 50px;" [inset]="true"></mat-divider>
+        </div>
 
       </div>
       <h3>Hello!</h3>
@@ -31,3 +33,41 @@
       </p>
     </mat-card-content>
   </mat-card>
+</div>
+
+  <!-- 
+  Japanese part
+  Replace this content with trasnlated content.
+-->
+<ng-template lang="jp" #elseBlock> 
+
+    <mat-card class="main-container overlap-up home-card mat-elevation-z0">
+        <mat-card-content>
+          <div class="card-top-text-container">
+            <h1 style="margin-left: 0px;">You'll find us here</h1>
+            <p>
+              私たちはあなたにスウェーデンと日本の間のコミュニケーションで最高の経験を提供することに焦点を当てています。
+              だからこそ、私たちはこの問題に関して包括的なコンサルティングサービスを提供しています。
+            </p>
+            <div style="width: 75%; margin: 0 auto;">
+              <mat-divider style="margin-top: 50px;" [inset]="true"></mat-divider>
+            </div>
+    
+          </div>
+          <h3>Hello!</h3>
+          <p>
+            Content goes here! Content goes here! Content goes here! Content goes here! Content goes here! Content goes here!
+            Content goes here! Content goes here! Content goes here! Content goes here! Content goes here! Content goes here!
+            Content goes here! Content goes here! Content goes here! Content goes here! Content goes here! Content goes here!
+            Content goes here! Content goes here! Content goes here! Content goes here! Content goes here! Content goes here!
+            Content goes here! Content goes here! Content goes here! Content goes here! Content goes here! Content goes here!
+            Content goes here! Content goes here! Content goes here! Content goes here! Content goes here! Content goes here!
+            Content goes here! Content goes here! Content goes here! Content goes here! Content goes here! Content goes here!
+            Content goes here! Content goes here! Content goes here! Content goes here! Content goes here! Content goes here!
+            Content goes here! Content goes here! Content goes here! Content goes here! Content goes here! Content goes here!
+            Content goes here! Content goes here! Content goes here! Content goes here! Content goes here! Content goes here!
+          </p>
+        </mat-card-content>
+      </mat-card>
+
+</ng-template>

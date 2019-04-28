@@ -1,7 +1,7 @@
 <div class="top-color-bar"></div>
 <mat-toolbar class="mat-elevation-z0 transparent" style="min-height: 80px">
   <div class="toolbar-content">
-    <span class="title-text" routerLink="/home">Olof's Consulting</span>
+    <span class="title-text" routerLink="/home">SwePan Consulting</span>
     <div class="toolbar-nav-buttons" *ngIf="language === 'en'; else elseBlock">
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/home">Home</button>
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/serviecs">Services</button>
@@ -9,6 +9,7 @@
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/why">Why?</button>
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/contact">Contact</button>
       <button mat-button color="accent" routerLinkActive="active-list-item" routerLink="/about">About</button>
+      <button mat-button color="accent" style="position: absolute; right: 25px;" (click)="changeLanguage('ja')">日本語</button>
     </div>
     <ng-template #elseBlock>
       <div class="toolbar-nav-buttons">
@@ -18,10 +19,11 @@
       <button mat-button color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/why">如何して?</button>
       <button mat-button color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/contact">接触</button>
       <button mat-button color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/about">アバウト</button>
+      <button mat-button color="accent" style="position: absolute; right: 25px;" (click)="changeLanguage('en')">English</button>
       </div>
     </ng-template>
 
-    <!-- Only used on smaller screens -->
+    <!-- Only used on smaller screens (phones) -->
     <div *ngIf="language === 'en'; else elseBlockMenu">
       <div class="toolbar-menu"> 
         <button mat-button [matMenuTriggerFor]="menu">
@@ -34,6 +36,7 @@
           <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/why">Why?</button>
           <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/contact">Contact</button>
           <button mat-menu-item color="accent" routerLinkActive="active-list-item" routerLink="/about">About</button>
+          <button mat-menu-item color="accent" (click)="changeLanguage('ja')">日本語</button>
         </mat-menu>
       </div>
     </div>
@@ -49,15 +52,10 @@
             <button mat-menu-item color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/why">如何して?</button>
             <button mat-menu-item color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/contact">接触</button>
             <button mat-menu-item color="accent" routerLinkActive="active-list-item" lang="ja" routerLink="/about">アバウト</button>
+            <button mat-menu-item color="accent" (click)="changeLanguage('en')">English</button>
         </mat-menu>
       </div>
     </ng-template>
 
   </div>
-    <span *ngIf="language === 'en'; else elseBlockLang">
-      <button mat-button color="accent" (click)="changeLanguage('ja')">日本語</button>
-    </span>
-    <ng-template #elseBlockLang>
-      <button mat-button color="accent" (click)="changeLanguage('en')">English</button>
-    </ng-template>
 </mat-toolbar>

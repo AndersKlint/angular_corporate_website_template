@@ -1,29 +1,95 @@
 <div class="main-container">
+  <div *ngIf="language === 'en'; else elseBlock">
+    <mat-card class="card">
+      <mat-card-content>
+          <div class="card-top-text-container">
+            <h1 style="margin-left: 0px;">Who are we?</h1>
+            <p>
+              We focus on giving you the best experience communicating between Sweden and Japan. That's why we offer a
+              comprehensive consulting service regarding the issue.
+            </p>
+            <div style="width: 75%; margin: 0 auto;">
+              <mat-divider style="margin-top: 50px;" [inset]="true"></mat-divider>
+            </div>
+          </div>
 
-<mat-card class="card">
-  <mat-card-content>
-      <div class="card-top-text-container">
-        <h1 style="margin-left: 0px;">Who are we?</h1>
-        <p>
-          We focus on giving you the best experience communicating between Sweden and Japan. That's why we offer a
-          comprehensive consulting service regarding the issue.
-        </p>
-        <div style="width: 75%; margin: 0 auto;">
-          <mat-divider style="margin-top: 50px;" [inset]="true"></mat-divider>
+        <div>
+          <p>
+            We are a team of that many people who formed a team because we wanted a team.
+            We are a team of that many people who formed a team because we wanted a team.
+            We are a team of that many people who formed a team because we wanted a team.
+            We are a team of that many people who formed a team because we wanted a team.
+          </p>
         </div>
-      </div>
 
-    <div>
-      <p>
-        We are a team of that many people who formed a team because we wanted a team.
-        We are a team of that many people who formed a team because we wanted a team.
-        We are a team of that many people who formed a team because we wanted a team.
-        We are a team of that many people who formed a team because we wanted a team.
-      </p>
-    </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <mat-icon>email</mat-icon>
+              <p style="display: inline-block; position: absolute; top: 15px;">E-mail: youemail@datmail.com</p>
+            </li>
+            <li class="list-group-item">
+                <mat-icon>phone</mat-icon>
+                <p style="display: inline-block; position: absolute; top: 15px;">Phone number: 070-123456789</p>
+            </li>
+            <li class="list-group-item">
+                <mat-icon>public</mat-icon>
+                <p style="display: inline-block; position: absolute; top: 15px;">Address: Westeast street 42, Middle crater 877 87, Luna</p>
+            </li>  
+          </ul>
 
-  </mat-card-content>
-</mat-card>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+
+  <!-- 
+  Japanese part
+  Replace this content with trasnlated content.
+  -->
+  <ng-template lang="jp" #elseBlock> 
+    <mat-card class="card">
+        <mat-card-content>
+            <div class="card-top-text-container">
+              <h1 style="margin-left: 0px;">Who are we?</h1>
+              <p>
+                私たちはあなたにスウェーデンと日本の間のコミュニケーションで最高の経験を提供することに焦点を当てています。
+                だからこそ、私たちはこの問題に関して包括的なコンサルティングサービスを提供しています。
+              </p>
+              <div style="width: 75%; margin: 0 auto;">
+                <mat-divider style="margin-top: 50px;" [inset]="true"></mat-divider>
+              </div>
+            </div>
+
+          <div>
+            <p>
+              We are a team of that many people who formed a team because we wanted a team.
+              We are a team of that many people who formed a team because we wanted a team.
+              We are a team of that many people who formed a team because we wanted a team.
+              We are a team of that many people who formed a team because we wanted a team.
+            </p>
+          </div>
+
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <mat-icon>email</mat-icon>
+                <p style="display: inline-block; position: absolute; top: 15px;">E-mail: youemail@datmail.com</p>
+              </li>
+              <li class="list-group-item">
+                  <mat-icon>phone</mat-icon>
+                  <p style="display: inline-block; position: absolute; top: 15px;">Phone number: 070-123456789</p>
+              </li>
+              <li class="list-group-item">
+                  <mat-icon>public</mat-icon>
+                  <p style="display: inline-block; position: absolute; top: 15px;">Address: Westeast street 42, Middle crater 877 87, Luna</p>
+              </li>  
+            </ul>
+
+        </mat-card-content>
+      </mat-card>
+
+  </ng-template>
 
 
 </div>
+
+

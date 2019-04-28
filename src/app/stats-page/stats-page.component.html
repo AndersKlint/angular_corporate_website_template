@@ -1,199 +1,264 @@
-<div class="carousel-container">
-<mdb-carousel [animation]="'slide'">
-  <mdb-carousel-item *ngFor="let slide of slides; let i = index">
-    <div class="carousel-image-container">
-      <img class="d-block w-100 carousel-image" src={{slide}} alt="Slide image">
-          <div class="slide-content-box">
-            <h3 class="slide-text" *ngIf="i === 0">We do the stuff with our services!</h3>
-            <h3 class="slide-text" *ngIf="i === 1">We also do other stuff!</h3>
-            <h3 class="slide-text" *ngIf="i === 2">And some more!</h3>
-            <h3 class="slide-text" *ngIf="i === 3">Maybe even that kinda stuff!</h3>
-            <h3 class="slide-text" *ngIf="i === 4">So what do you think?</h3>
-            <div class="slide-button" *ngIf="i === 4" routerLink="/contact"><h3 style="font-weight:bold;">Contact us</h3></div>
-          </div>
-    </div>
-  </mdb-carousel-item>
-
-</mdb-carousel>
-</div>
-
-
-<mat-card class="main-container overlap-up home-card mat-elevation-z0">
-  <mat-card-content>
-    <div class="card-top-text-container">
-      <h1 style="margin-left: 0px;">Statistics between Sweden and Japan</h1>
-      <p>
-        We focus on giving you the best experience communicating between Sweden and Japan. That's why we offer a
-        comprehensive consulting service regarding the issue.
-      </p>
-      <div style="width: 75%; margin: 0 auto;">
-        <mat-divider style="margin-top: 50px;" [inset]="true"></mat-divider>
+<div class="toolbar-nav-buttons" *ngIf="language === 'en'; else elseBlock">
+  <div class="carousel-container">
+  <mdb-carousel [animation]="'slide'">
+    <mdb-carousel-item *ngFor="let slide of slides; let i = index">
+      <div class="carousel-image-container">
+        <img class="d-block w-100 carousel-image" src={{slide}} alt="Slide image">
+            <div class="slide-content-box">
+              <h3 class="slide-text" *ngIf="i === 0">We do the stuff with our services!</h3>
+              <h3 class="slide-text" *ngIf="i === 1">We also do other stuff!</h3>
+              <h3 class="slide-text" *ngIf="i === 2">And some more!</h3>
+              <h3 class="slide-text" *ngIf="i === 3">Maybe even that kinda stuff!</h3>
+              <h3 class="slide-text" *ngIf="i === 4">So what do you think?</h3>
+              <div class="slide-button" *ngIf="i === 4" routerLink="/contact"><h3 style="font-weight:bold;">Contact us</h3></div>
+            </div>
       </div>
-    </div>
+    </mdb-carousel-item>
 
-    <h2>Japan and Sweden</h2>
-    <!--
-    To change the charts go into their directory located in this folder and change the data in the .ts files.
+  </mdb-carousel>
+  </div>
 
-    See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/
 
-    If you want more charts contact me, or follow this quick guide:
-    1. In terminal cd to project-name (personal-website-template).
-    2. type: ng generate component stats-page/bar-chart-2.
-    3. Copy html-content from other chart to bar-chart2.component.html.
-    4. The same with the .ts file, but only the content after line 9.
-    -->
+  <mat-card class="main-container overlap-up home-card mat-elevation-z0">
+    <mat-card-content>
+      <div class="card-top-text-container">
+        <h1 style="margin-left: 0px;">Statistics between Sweden and Japan</h1>
+        <p>
+          We focus on giving you the best experience communicating between Sweden and Japan. That's why we offer a
+          comprehensive consulting service regarding the issue.
+        </p>
+        <div style="width: 75%; margin: 0 auto;">
+          <mat-divider style="margin-top: 50px;" [inset]="true"></mat-divider>
+        </div>
+      </div>
 
-    <p>
-    To change the charts go into their directory located in this folder and change the data in the .ts files.
+      <h2>Japan and Sweden</h2>
+      <!--
+      To change the charts go into their directory located in this folder and change the data in the .ts files.
 
-    See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/
+      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/
 
-    If you want more charts contact me, or follow this quick guide:
-    1. In terminal cd to project-name (personal-website-template).
-    2. type: ng generate component stats-page/bar-chart-2.
-    3. Copy html-content from other chart to bar-chart2.component.html.
-    4. The same with the .ts file, but only the content after line 9.
+      If you want more charts follow this quick guide:
+      1. In terminal cd to project-name (corporate-website-template).
+      2. type: ng generate component stats-page/<chart-name> (e.g. stats-page/bar-chart-2).
+      3. Copy html-content from other chart to bar-chart2.component.html.
+      4. The same with the .ts file, but only the content after line 9.
+      -->
 
-    To change the charts go into their directory located in this folder and change the data in the .ts files.
+      <p>
+      To change the charts go into their directory located in this folder and change the data in the .ts files.
 
-    See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/
+      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/
 
-    If you want more charts contact me, or follow this quick guide:
-    1. In terminal cd to project-name (personal-website-template).
-    2. type: ng generate component stats-page/bar-chart-2.
-    3. Copy html-content from other chart to bar-chart2.component.html.
-    4. The same with the .ts file, but only the content after line 9.
-    </p>
+      If you want more charts contact me, or follow this quick guide:
+      1. In terminal cd to project-name (personal-website-template).
+      2. type: ng generate component stats-page/bar-chart-2.
+      3. Copy html-content from other chart to bar-chart2.component.html.
+      4. The same with the .ts file, but only the content after line 9.
 
-    <div class="chart-centered">
-      <app-bar-chart></app-bar-chart>
-    </div>
+      To change the charts go into their directory located in this folder and change the data in the .ts files.
 
-    <p>
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-    </p>
+      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/
 
-    <p>
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-    </p>
+      If you want more charts contact me, or follow this quick guide:
+      1. In terminal cd to project-name (personal-website-template).
+      2. type: ng generate component stats-page/bar-chart-2.
+      3. Copy html-content from other chart to bar-chart2.component.html.
+      4. The same with the .ts file, but only the content after line 9.
+      </p>
 
-    <div class="chart-right">
-      <app-pie-chart></app-pie-chart>
-    </div>
+      <div class="chart-centered">
+        <app-bar-chart></app-bar-chart>
+      </div>
 
-    <p>
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-    </p>
+      <p>
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+      </p>
 
-    <p>
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-    </p>
+      <p>
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+      </p>
 
-    <p>
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-    </p>
+      <div class="chart-right">
+        <app-pie-chart></app-pie-chart>
+      </div>
 
-    <p>
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-    </p>
+      <p>
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+      </p>
 
-    <p>
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-    </p>
+      <p>
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+      </p>
 
-    <p>
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-      To change the charts go into their directory located in this folder and change the data in the .ts files.
-      See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
-    </p>
+      <p>
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+      </p>
 
-  </mat-card-content>
+      <p>
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+      </p>
 
-</mat-card>
+      <p>
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+      </p>
+
+      <p>
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+        To change the charts go into their directory located in this folder and change the data in the .ts files.
+        See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+      </p>
+
+    </mat-card-content>
+
+  </mat-card>
+
+  </div>
+
+<!-- 
+  Japanese part
+  Replace this content with trasnlated content.
+-->
+<ng-template lang="jp" #elseBlock> 
+    <div class="carousel-container">
+        <mdb-carousel [animation]="'slide'">
+          <mdb-carousel-item *ngFor="let slide of slides; let i = index">
+            <div class="carousel-image-container">
+              <img class="d-block w-100 carousel-image" src={{slide}} alt="Slide image">
+                  <div class="slide-content-box">
+                    <h3 class="slide-text" *ngIf="i === 0">We do the stuff with our services!</h3>
+                    <h3 class="slide-text" *ngIf="i === 1">We also do other stuff!</h3>
+                    <h3 class="slide-text" *ngIf="i === 2">And some more!</h3>
+                    <h3 class="slide-text" *ngIf="i === 3">Maybe even that kinda stuff!</h3>
+                    <h3 class="slide-text" *ngIf="i === 4">So what do you think?</h3>
+                    <div class="slide-button" *ngIf="i === 4" routerLink="/contact"><h3 style="font-weight:bold;">Contact us</h3></div>
+                  </div>
+            </div>
+          </mdb-carousel-item>
+        
+        </mdb-carousel>
+        </div>
+        
+        
+        <mat-card class="main-container overlap-up home-card mat-elevation-z0">
+          <mat-card-content>
+            <div class="card-top-text-container">
+              <h1 style="margin-left: 0px;">Statistics between Sweden and Japan</h1>
+              <p>
+                私たちはあなたにスウェーデンと日本の間のコミュニケーションで最高の経験を提供することに焦点を当てています。
+                だからこそ、私たちはこの問題に関して包括的なコンサルティングサービスを提供しています。
+              </p>
+              <div style="width: 75%; margin: 0 auto;">
+                <mat-divider style="margin-top: 50px;" [inset]="true"></mat-divider>
+              </div>
+            </div>
+        
+            <div class="chart-centered">
+              <app-bar-chart></app-bar-chart>
+            </div>
+        
+            <p>
+              To change the charts go into their directory located in this folder and change the data in the .ts files.
+              See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+              To change the charts go into their directory located in this folder and change the data in the .ts files.
+              See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+              To change the charts go into their directory located in this folder and change the data in the .ts files.
+              See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+              To change the charts go into their directory located in this folder and change the data in the .ts files.
+              See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+              To change the charts go into their directory located in this folder and change the data in the .ts files.
+              See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+              To change the charts go into their directory located in this folder and change the data in the .ts files.
+              See avalible charts here: https://mdbootstrap.com/docs/angular/advanced/charts/.
+            </p>
+        
+          </mat-card-content>
+        
+        </mat-card>        
+</ng-template>
