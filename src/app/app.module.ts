@@ -18,6 +18,7 @@ import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { BarChartComponent } from './stats-page/bar-chart/bar-chart.component';
 import { PieChartComponent } from './stats-page/pie-chart/pie-chart.component';
+import { LicenseComponent } from './license/license.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PieChartComponent } from './stats-page/pie-chart/pie-chart.component';
     AboutComponent,
     FooterComponent,
     BarChartComponent,
-    PieChartComponent
+    PieChartComponent,
+    LicenseComponent
   ],
   imports: [
     BrowserModule,

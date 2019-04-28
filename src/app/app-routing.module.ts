@@ -7,6 +7,7 @@ import {StatsPageComponent} from './stats-page/stats-page.component'
 import {ServicesPageComponent} from './services-page/services-page.component'
 import {WhyPageComponent} from './why-page/why-page.component'
 import {AboutComponent} from './about/about.component'
+import { LicenseComponent } from './license/license.component';
 
 const routes: Routes = [
    { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
    { path: 'serviecs', component: ServicesPageComponent },
    { path: 'why', component: WhyPageComponent },
    { path: 'about', component: AboutComponent },
+   { path: 'license', component: LicenseComponent },
 ];
 
 @NgModule({
