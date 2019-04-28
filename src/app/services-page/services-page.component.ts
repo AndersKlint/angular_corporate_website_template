@@ -9,10 +9,10 @@ import { LanguageService } from '../language.service';
 export class ServicesPageComponent implements OnInit {
 
   slides: string[] = [
+    'assets/paper_art.jpg',
     'assets/alps_lake.jpg',
     'assets/beach_bridge.jpg',
     'assets/dragon_boat.jpg',
-    'assets/paper_art.jpg',
     'assets/snow_structure.jpg',
   ]
 

@@ -20,6 +20,9 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 150%;
   margin-right: 5%;
+  margin-left: 1%;
+  margin-top: 2%;
+  text-align: center;
   font-weight:bold;
   cursor: pointer;
   outline: none;
@@ -50,6 +53,11 @@
   background-color: mat-color($photo-app-accent, lighter);
 }
 
+.logo {
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
 @media (max-width: 850px) {
 
   .toolbar-nav-buttons {
@@ -64,6 +72,11 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .logo {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
 }
