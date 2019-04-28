@@ -1,6 +1,19 @@
 # Corporate Website Template
-
+A website template for your corporate or consulting web site.
+A live demo can be found [here](https://andersklint.github.io/angular_corporate_website_template)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
+
+## Setup
+1. Install nodeJS, npm, and Angular if you haven't already.
+2. Clone or fork the repo to your own github account, preferibly. Else, just download the repo locally.
+3. Navigate to the project directory in the terminal (the folder with angular.json, src, node_modules, etc.)
+4. Run the command: "npm update". This will download all dependencies for the project.
+5. Then just run "ng serve -o" everytime you want to start the web server.
+
+## Deploy to Github Pages
+Edit the script update_git_pages.sh with your own github data, and then just run it to deploy a public website.
+If you're not on a linux based filesystem, just look at the commands in the script and copy them to the terminal
+sequentially.
 
 ## Development server
 
